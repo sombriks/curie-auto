@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "test": "nyc mocha -r esm -r module-alias"
   },
   "keywords": [],
   "author": "",
@@ -25,7 +26,8 @@
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
     "mocha": "^6.1.2",
-    "nodemon": "^1.18.11"
+    "nodemon": "^1.18.11",
+    "nyc": "^13.3.0"
   },
   "_moduleAliases": {
     "~": "app"
